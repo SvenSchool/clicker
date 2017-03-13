@@ -1,0 +1,196 @@
+* {
+	padding:0;
+	margin:0;
+	font-family:"Open Sans", sans-serif;
+	font-weight:400;
+}
+
+body {
+	background-color:#EEE;
+	position:relative;
+	height:100vh;
+}
+
+.container {
+	width:1080px;
+	margin:0 auto;
+	padding:0 10px;
+}
+
+.main-content {
+	margin-top:23px;
+}
+
+.content {
+	background-color:#FFF;
+	box-shadow:0 1px 2px rgba(0,0,0,.1);
+	padding:5px 10px;
+	margin:10px 0;
+}
+
+.content:first-of-type {
+	margin-top:23px;
+}
+
+.clear {
+	clear:both;
+	overflow:hidden;
+}
+
+header {
+	width:100%;
+	background-color:#222;
+	box-shadow:0 1px 2px rgba(0,0,0,.1);
+	z-index:90;
+}
+
+header {
+	position:fixed;
+	top:0;
+}
+
+header ul li {
+	color:white;
+	display:inline-block;
+}
+
+header ul li:after {
+	content:" | ";
+}
+
+header ul li a {
+	color:inherit;
+	text-decoration:none;
+}
+
+header ul li a:hover {
+	color:#CCC;
+}
+
+header ul li a:active {
+	color:#999;
+}
+
+#prog-container {
+	width:100%;
+	height:5px;
+	background:#FFF;
+	border-bottom:1px solid #FFF;
+}
+
+#prog {
+	width:0px;
+	height:5px;
+	background:#00A9ED;
+}
+
+.menu {
+	background-color:#444;
+	height:100%;
+	width:280px;
+	position:fixed;
+	left:-280px;
+	top:28px;
+	box-shadow:0 0 2px rgba(0,0,0,.1);
+	-webkit-transition:all 250ms ease;
+	-moz-transition:all 250ms ease;
+	transition:all 250ms ease;
+	z-index:100;
+}
+
+.menu-top {
+	width:100%;
+}
+
+.menu-top a {
+	display:block;
+	height:100%;
+	color:#FFF;
+	text-align:right;
+	padding:5px 10px;
+}
+
+.menu-shown {
+	left:0;
+}
+
+#video {
+	display:block;
+	width:854px;
+	height:480px;
+	box-shadow:0 0 1px -1px #000;
+	margin:0 auto;
+	position:relative;
+	background-color:#ccc;
+}
+
+#video > #sprite {
+	position:absolute;
+	margin:auto;
+	top:0; left:0; bottom:0; right:0;
+	width:87px;
+	height:61px;
+	background-image:url(ytsprite.png);
+}
+
+#video:hover #sprite {
+	background-position:87px 61px;
+	cursor:pointer;
+}
+
+.meta {
+	width:854px;
+	margin:5px auto;
+}
+
+.meta > #title {
+	font-size:26px;
+	width:100%;
+	display:block;
+}
+
+.meta > #views {
+	font-size:20px;
+	width:180px;
+	text-align:right;
+	float:right;
+	margin-bottom:3px;
+}
+
+.meta > #rating {
+	float:right;
+	width:180px;
+	height:2px;
+	background-color:#CCC;
+	position:relative;
+	overflow:hidden;
+}
+
+.meta > #rating > #dislikes {
+	height:100%;
+	width:100%;
+	background:#167AC6;
+	position:absolute;
+	right:0;
+}
+
+.actions {
+	margin-top:7px;
+	border-bottom:1px solid #E2E2E2;
+}
+
+.actions a {
+	font-size:18px;
+	margin:0 3px;
+	font-weight:600;
+	color:#828282;
+	text-decoration:none;
+}
+
+.actions a:hover {
+	color:#606060;
+}
+
+.actions a:active {
+	color:#333;
+}
